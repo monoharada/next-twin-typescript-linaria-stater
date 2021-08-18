@@ -1,0 +1,65 @@
+{
+  "name": "nextjs-preact-ts-twinmacro-linaria",
+  "version": "4.0.0",
+  "private": true,
+  "babelMacros": {
+    "twin": {
+      "allowStyleProp": true
+    }
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@storybook/addon-a11y": "^6.3.7",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-docs": "^6.3.7",
+    "@storybook/addon-knobs": "^6.3.0",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-storyshots": "^6.3.7",
+    "@storybook/addons": "^6.3.7",
+    "@storybook/react": "^6.3.7",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/typography": "0.4.1",
+    "@whitespace/storybook-addon-html": "^5.0.0",
+    "autoprefixer": "^10.3.1",
+    "clsx": "latest",
+    "dotenv": "^10.0.0",
+    "linaria": "^2.1.0",
+    "next": "10.2.3",
+    "next-compose-plugins": "2.2.1",
+    "next-linaria": "^0.11.0",
+    "next-plugin-preact": "3.0.6",
+    "next-transpile-modules": "4.1.0",
+    "postcss": "^8.3.6",
+    "preact": "10.5.13",
+    "preact-render-to-string": "5.1.19",
+    "react": "npm:@preact/compat@0.0.3",
+    "react-dom": "npm:@preact/compat@0.0.3",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@1.1.2",
+    "tailwindcss-typography": "^3.1.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "7.13.16",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@types/next": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-macros": "3.1.0",
+    "tailwindcss": "2.2.0",
+    "twin.macro": "2.5.0",
+    "typescript": "latest"
+  },
+  "keywords": [],
+  "description": ""
+}
