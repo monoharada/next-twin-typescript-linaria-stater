@@ -57,6 +57,7 @@
     "@types/react-dom": "latest",
     "babel-loader": "^8.2.2",
     "babel-plugin-macros": "3.1.0",
+    "hygen": "^6.1.0",
     "tailwindcss": "2.2.0",
     "twin.macro": "2.5.0",
     "typescript": "latest"
