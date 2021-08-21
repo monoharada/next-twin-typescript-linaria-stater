@@ -39,6 +39,7 @@
     "tailwindcss-typography": "^3.1.0"
   },
   "scripts": {
+    "new:fc": "hygen new fc",
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
