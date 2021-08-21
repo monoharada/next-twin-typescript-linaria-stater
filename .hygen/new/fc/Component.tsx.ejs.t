@@ -1,9 +1,10 @@
 ---
 to: <%= abs_path %>/<%= component_name %>.tsx
 ---
-import React from "react";
+<% if(category != 'compositions' ) { -%>
 import { css } from "linaria";
 import tw, { styled, theme } from 'twin.macro';
+<% } -%>
 <% if (have_hooks) { -%>
 import { useDependencies } from './dependencies'
 <% } -%>
