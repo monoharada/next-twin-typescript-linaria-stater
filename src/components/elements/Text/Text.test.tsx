@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Button } from './';
+import { Text } from './';
 // ______________________________________________________
 //
-describe('elements/Button', () => {
+describe('elements/Text', () => {
   it('Snap Shot', () => {
-    const component = renderer.create(<Button />);
+    const component = renderer.create(<Text />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -1,16 +1,16 @@
 // import React from "react";
-// import { css } from "linaria";
-// import tw, { styled, theme } from 'twin.macro';
+import { css } from 'linaria';
+import tw from 'twin.macro';
 // ______________________________________________________
 //
 export type Props = {
+  children: string;
 };
-// ______________________________________________________
+// ___
+const textsample = css`
+  ${tw`h-16 text-pink-600 bg-indigo-400`}
+`;
 //
-export const Button: React.FC<Props> = ({children}) => {
-  return (
-    <div>
-      {children}
-    </div>
-  );
-}
+export const Button: React.FC<Props> = ({ children }) => {
+  return <div className={textsample}>{children}</div>;
+};

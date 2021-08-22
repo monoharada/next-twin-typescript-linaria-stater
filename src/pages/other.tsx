@@ -1,11 +1,11 @@
-import React from "react";
-import { css } from "linaria";
-import tw from "twin.macro";
-import { Button,Text } from "../components";
+import React from 'react';
+import { css } from 'linaria';
+import tw from 'twin.macro';
+import { Button, Text } from '../components';
 
 export default function other() {
   return (
-    <div className="App">
+    <div className='App'>
       <h1>Next.js + twin.macro + Linaria</h1>
       <Text>hogehoge</Text>
       <div
@@ -15,7 +15,7 @@ export default function other() {
       >
         I am styled with twin.macro + Linaria
         <Button
-          type="button"
+          type='button'
           isSecondary
           className={css`
             ${tw`ml-11`}

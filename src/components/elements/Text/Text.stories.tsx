@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button } from './';
+import { Text } from './';
 // ______________________________________________________
 //
-storiesOf('elements/Button', module).add('default', () => (
-  <Button>hoge</Button>
-));
+storiesOf('elements/Text', module).add('default', () => <Text />);
