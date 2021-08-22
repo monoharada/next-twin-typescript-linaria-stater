@@ -4,4 +4,4 @@ import { Button } from "./";
 // ______________________________________________________
 //
 storiesOf("elements/Button", module)
-  .add("default", () => <Button />);
+  .add("default", () => <Button >hoge</Button>);

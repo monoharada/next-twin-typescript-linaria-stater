@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import { css } from "linaria";
 // import tw, { styled, theme } from 'twin.macro';
 // ______________________________________________________
@@ -7,10 +7,10 @@ export type Props = {
 };
 // ______________________________________________________
 //
-export const Button: React.FC<Props> = (props) => {
+export const Button: React.FC<Props> = ({children}) => {
   return (
     <div>
-      hoge{props}
+      {children}
     </div>
   );
 }

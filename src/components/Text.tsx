@@ -1,12 +1,14 @@
 import { css } from "linaria";
 import tw from "twin.macro";
 
+const textsample = css`
+${tw`grid text-xl text-green-600 place-items-center`}`
+
 const Text = ({children}:any) => {
     return (
         <p
-            className={css`
-          ${tw`text-xl text-green-600`}
-        `} >
+            className={textsample,textsample}
+        >
             {children}
         </p>
     )
