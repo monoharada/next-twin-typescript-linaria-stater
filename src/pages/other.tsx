@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'linaria';
 import tw from 'twin.macro';
-import { Button, Text } from '../components';
+import { Button, Text } from '@/elements/index';
 
 export default function other() {
   return (

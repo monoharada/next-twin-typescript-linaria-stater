@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 import tw from 'twin.macro';
-import { Button } from '@/components/elements';
+import { Button } from '@/elements/index';
 
 const Index: React.FC = () => {
   return (
