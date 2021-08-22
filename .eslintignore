@@ -1,0 +1,11 @@
+/.eslintrc.js
+/node_modules
+
+/.next/
+/out/
+/src/**/*.test.tsx
+/.hygen/**/*.test.tsx
+/next.config.js
+/postcss.config.js
+/tailwind.config.js
+/commitlintrc.js

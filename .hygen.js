@@ -1,4 +1,3 @@
 module.exports = {
-    templates: `${__dirname}/.hygen`,
-  }
-  
+  templates: `${__dirname}/.hygen`,
+};

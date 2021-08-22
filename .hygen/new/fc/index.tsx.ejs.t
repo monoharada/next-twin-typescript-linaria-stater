@@ -1,4 +1,7 @@
 ---
-to: <%= abs_path %>/index.tsx
+inject: true
+to: <%= parent_path %>/index.ts
+append: true
 ---
-export { <%= component_name %> } from './<%= component_name %>'
+
+export {  <%= component_name %> } from './<%= component_name %>'
