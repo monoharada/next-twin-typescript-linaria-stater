@@ -56,7 +56,7 @@
     "export": "image-list && next build && next export",
     "start": "next start",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./out -p 6006",
     "build-storybook": "build-storybook",
     "lint": "next lint . && prettier --check .",
     "format": "eslint --fix . && prettier --write .",
