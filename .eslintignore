@@ -1,0 +1,8 @@
+/.eslintrc.js
+/node_modules
+
+/.next/
+/out/
+/src/**/*.test.tsx
+/.hygen/**/*.test.tsx
+

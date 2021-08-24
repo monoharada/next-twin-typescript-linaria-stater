@@ -1,29 +1,28 @@
-import React from "react";
-import { css } from "linaria";
-import tw from "twin.macro";
-import { Button,Text } from "../components";
+import { css } from 'linaria'
+import tw from 'twin.macro'
+import { Button, Image } from '@/elements/index'
+import Link from 'next/link'
 
-export default function Index() {
+const Index: React.FC = () => {
   return (
-    <div className="App">
+    <div className='App'>
       <h1>Next.js + twin.macro + Linaria</h1>
-      <Text>hogehoge</Text>
       <div
         className={css`
           ${tw`mt-[50px] md:bg-gray-500 sm:bg-pink-500 border border-solid border-purple-900 p-6 font-bold`}
         `}
       >
         I am styled with twin.macro + Linaria
-        <Button
-          type="button"
-          isSecondary
-          className={css`
-            ${tw`ml-11`}
-          `}
-        >
-          hoge
-        </Button>
+        <Link href='/other' passHref>
+          <span className='cursor-pointer'>
+            <Button>Go to other page</Button>
+          </span>
+        </Link>
+        <div className={'relative'}>
+          <Image img={'demo.jpg'} alt='image dummy' />
+        </div>
       </div>
     </div>
-  );
+  )
 }
+export default Index

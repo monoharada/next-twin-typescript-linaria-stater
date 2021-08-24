@@ -10,14 +10,12 @@ const App = ({ Component, pageProps }: AppProps) => (
       <title>
         Nextjs App with TypeScript, ESlint, Jest, Emotion, Tailwind and Twin
       </title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel='icon' href='/favicon.ico' />
     </Head>
     {/* <GlobalStyles  /> */}
     {/* <Global styles={globalStyles} /> */}
     <Component {...pageProps} />
   </>
 )
-
-
 
 export default App
