@@ -1,9 +1,7 @@
-import { css } from 'linaria'
-import tw, { styled, theme } from 'twin.macro'
-import { useDependencies } from './dependencies'
+// import { css } from "linaria";
+// import tw, { styled, theme } from 'twin.macro';
 // ______________________________________________________
 //
 export const Title: React.FC = () => {
-  const deps = useDependencies()
   return <div></div>
 }

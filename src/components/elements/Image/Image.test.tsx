@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Image } from './Image'
+import { Image } from '@/elements/index'
 // ______________________________________________________
 //
 describe('elements/Image', () => {

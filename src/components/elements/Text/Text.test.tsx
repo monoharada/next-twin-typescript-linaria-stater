@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Text } from './Text'
+import { Text } from '@/elements/index'
 // ______________________________________________________
 //
 describe('elements/Text', () => {

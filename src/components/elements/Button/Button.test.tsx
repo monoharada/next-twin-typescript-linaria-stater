@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Button } from './Button'
+import { Button } from '@/elements/index'
 // ______________________________________________________
 //
 describe('elements/Button', () => {

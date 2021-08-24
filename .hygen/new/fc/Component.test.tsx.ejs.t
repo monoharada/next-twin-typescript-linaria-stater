@@ -3,7 +3,7 @@ to: <%= abs_path %>/<%= component_name %>.test.tsx
 ---
 import React from "react";
 import renderer from "react-test-renderer";
-import { <%= component_name %> } from "./";
+import { <%= component_name %> } from "@/<%= category %>/index";
 // ______________________________________________________
 //
 describe("<%= path %>", () => {
