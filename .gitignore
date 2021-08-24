@@ -18,4 +18,4 @@ yarn-error.log*
 /.next
 /out
 
-/.linaria-cache
+.linaria-cache
