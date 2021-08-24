@@ -23,7 +23,9 @@
     "paths": {
       "@/elements/*": ["src/components/elements/*"],
       "@/modules/*": ["src/components/modules/*"],
-      "@/compositions/*": ["src/components/compositions/*"]
+      "@/compositions/*": ["src/components/compositions/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/images/*": ["public/images/*"]
     }
   },
   "exclude": ["node_modules"],
