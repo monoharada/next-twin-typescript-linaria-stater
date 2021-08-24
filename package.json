@@ -51,15 +51,17 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "new:fc": "hygen new fc",
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next build && next export",
+    "dev": "yarn image-list && next dev",
+    "build": "image-list && next build",
+    "export": "image-list && next build && next export",
     "start": "next start",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "next lint . && prettier --check .",
-    "format": "eslint --fix . && prettier --write ."
+    "format": "eslint --fix . && prettier --write .",
+    "image-list": "source scripts/imageList.sh && prettier --write ./src/lib/image*",
+    "check": "serve out"
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
