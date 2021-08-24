@@ -1,5 +1,5 @@
 ---
-to: <%= abs_path %>/index.tsx
+to: <%= abs_path %>/<%= component_name %>.tsx
 ---
 <% if(category != 'compositions' ) { -%>
 import { css } from "linaria";
