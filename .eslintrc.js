@@ -4,4 +4,4 @@ module.exports = {
   rules: {
     '@next/next/no-img-element': 0,
   },
-};
+}
