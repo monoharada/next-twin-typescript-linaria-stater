@@ -1,29 +1,23 @@
-import React from 'react';
-import { css } from 'linaria';
-import tw from 'twin.macro';
-import { Button, Text } from '@/elements/index';
+import useMedia from 'use-media'
+// import img from '@/images/demo.jpg';
+import { Image, Button } from '@/elements/index'
+import Link from 'next/link'
 
-export default function other() {
+const Demo = () => {
+  const isWide = useMedia({ minWidth: '1000px' })
   return (
-    <div className='App'>
-      <h1>Next.js + twin.macro + Linaria</h1>
-      <Text>hogehoge</Text>
-      <div
-        className={css`
-          ${tw`mt-[50px] md:bg-gray-500 sm:bg-pink-500 border border-solid border-purple-900 p-6 font-bold`}
-        `}
-      >
-        I am styled with twin.macro + Linaria
-        <Button
-          type='button'
-          isSecondary
-          className={css`
-            ${tw`ml-11`}
-          `}
-        >
-          hoge
-        </Button>
-      </div>
+    <div>
+      Screen is wide: {isWide ? '😃' : '😢'}
+      <Link href='/' passHref>
+        <span className='cursor-pointer'>
+          <Button>Back to Home</Button>
+        </span>
+      </Link>
+      <p>
+        ↓↓　Responsive image with picture element. automatic dimensions insert
+      </p>
+      <Image img={'demo_sp.jpg'} spImg={'demo.jpg'} alt={'alt!!!'} />
     </div>
-  );
+  )
 }
+export default Demo

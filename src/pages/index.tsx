@@ -1,6 +1,7 @@
-import { css } from 'linaria';
-import tw from 'twin.macro';
-import { Button } from '@/elements/index';
+import { css } from 'linaria'
+import tw from 'twin.macro'
+import { Button, Image } from '@/elements/index'
+import Link from 'next/link'
 
 const Index: React.FC = () => {
   return (
@@ -12,9 +13,16 @@ const Index: React.FC = () => {
         `}
       >
         I am styled with twin.macro + Linaria
-        <Button>hoge</Button>
+        <Link href='/other' passHref>
+          <span className='cursor-pointer'>
+            <Button>Go to other page</Button>
+          </span>
+        </Link>
+        <div className={'relative'}>
+          <Image img={'demo.jpg'} alt='image dummy' />
+        </div>
       </div>
     </div>
-  );
-};
-export default Index;
+  )
+}
+export default Index
