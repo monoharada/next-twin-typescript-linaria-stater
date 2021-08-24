@@ -30,15 +30,15 @@ module.exports = {
         name: 'have_hooks',
         message: 'Is it have hooks?',
       },
-    ];
+    ]
     return inquirer.prompt(questions).then((answers) => {
-      const { category, component_name, dir, have_props } = answers;
-      const path = `${category}/${dir ? `${dir}/` : ``}${component_name}`;
-      const abs_path = `src/components/${path}`;
-      const parent_path = `src/components/${category}/`;
-      const type_annotate = have_props ? 'React.FC<Props>' : 'React.FC';
-      const props = have_props ? '(props)' : '()';
-      const tag = args.tag ? args.tag : 'div';
+      const { category, component_name, dir, have_props } = answers
+      const path = `${category}/${dir ? `${dir}/` : ``}${component_name}`
+      const abs_path = `src/components/${path}`
+      const parent_path = `src/components/${category}/`
+      const type_annotate = have_props ? 'React.FC<Props>' : 'React.FC'
+      const props = have_props ? '(props)' : '()'
+      const tag = args.tag ? args.tag : 'div'
       return {
         ...answers,
         path,
@@ -47,7 +47,7 @@ module.exports = {
         type_annotate,
         props,
         tag,
-      };
-    });
+      }
+    })
   },
-};
+}

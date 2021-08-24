@@ -20,4 +20,4 @@ module.exports = {
       textUnset: false, // whether to generate utilities to unset text properties
     }),
   ],
-};
+}
