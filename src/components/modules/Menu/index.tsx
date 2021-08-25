@@ -1,29 +1,19 @@
-import Link from 'next/link'
-
+import { css } from 'linaria'
+import tw from 'twin.macro'
+import { MenuList } from '@/elements/index'
+// ______________________________________________________
+//
+const menu = css`
+  ${tw`flex-col hidden md:flex md:flex-row md:-mx-4`}
+`
+// ______________________________________________________
+//
 export const Menu = () => {
   return (
-    <ul className='flex-col hidden md:flex md:flex-row md:-mx-4'>
-      <li>
-        <Link href='/other' passHref>
-          <span className='my-1 text-white hover:text-blue-500 md:mx-4 md:my-0'>
-            選ばれる理由
-          </span>
-        </Link>
-      </li>
-      <li>
-        <Link href='/other' passHref>
-          <span className='my-1 text-white hover:text-blue-500 md:mx-4 md:my-0'>
-            学部・大学院
-          </span>
-        </Link>
-      </li>
-      <li>
-        <Link href='/other' passHref>
-          <span className='my-1 text-white hover:text-blue-500 md:mx-4 md:my-0'>
-            授業番組表
-          </span>
-        </Link>
-      </li>
+    <ul className={menu}>
+      <MenuList href='/other' label='選ばれる理由' />
+      <MenuList href='/other' label='学部・大学院' />
+      <MenuList href='/other' label='授業番組表' />
     </ul>
   )
 }
