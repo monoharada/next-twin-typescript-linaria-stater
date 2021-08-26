@@ -22,6 +22,11 @@ module.exports = {
       },
       {
         type: 'confirm',
+        name: 'have_style',
+        message: 'Is it have style?',
+      },
+      {
+        type: 'confirm',
         name: 'have_props',
         message: 'Is it have props?',
       },
@@ -32,12 +37,13 @@ module.exports = {
       },
     ]
     return inquirer.prompt(questions).then((answers) => {
-      const { category, component_name, dir, have_props } = answers
+      const { category, component_name, dir, have_style, have_props } = answers
       const path = `${category}/${dir ? `${dir}/` : ``}${component_name}`
       const abs_path = `src/components/${path}`
       const parent_path = `src/components/${category}/`
+      const styles = have_style ? 'const styles = css`${tw``}`' : ''
       const type_annotate = have_props ? 'React.FC<Props>' : 'React.FC'
-      const props = have_props ? '(props)' : '()'
+      const props = have_props ? '({})' : '()'
       const tag = args.tag ? args.tag : 'div'
       return {
         ...answers,
@@ -45,6 +51,7 @@ module.exports = {
         abs_path,
         parent_path,
         type_annotate,
+        styles,
         props,
         tag,
       }
