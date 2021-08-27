@@ -3,5 +3,5 @@
 // ______________________________________________________
 //
 export const Text: React.FC = ({ children }) => {
-  return <div>{children}</div>
+  return <div className='text-red-500'>{children}</div>
 }
